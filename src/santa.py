@@ -28,18 +28,25 @@ def generateSantaList():
     return santa_list
 
 ################################
-###EDIT MESSAGE HERE
+### EDIT MESSAGE HERE
+### Be sure to include name in your message
 def contructSantaMessage(name):
-    msg = """Subject: Viktigt meddelande fran Tomten
+    ##Keep subject:blabla and two new lines
+    msg = """Subject: Important notice from Santa
 
-    HOHOHO GOD JUL
-    Jag har atit for mycket grot och haller pa o ramnar!!!
-    Du maste radda Julen, ge en julklapp till: """ + name + """ 
-    da jag maste betala for mina synder
+    HOHOHO merry Christmas 
 
-    Med juliga halsningar
-    Tomten
+    I have eaten too much porridge and now cannot get out of bed!!!
+    You must save christmas, give a present to """ + name + """ 
+    For I must pay for my sins...
+
+    Yours truly,
+    Santa
     """
+    ########################
+    
+    #uncomment this if you lost name
+    #msg = msg + "\n" + name
     return msg
 
 
